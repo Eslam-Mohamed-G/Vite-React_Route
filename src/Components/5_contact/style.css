@@ -1,0 +1,58 @@
+:root {
+    --main-color: rgb(26, 188, 156);
+    --second-color: rgb(44, 62, 80);
+    --text-color: rgb(255, 255, 255);
+}
+.contact h1{
+    font-weight: 700;
+    color: var(--second-color) !important;
+}
+.contact .icon{
+    font-weight: 700;
+    color: var(--second-color) !important;
+}
+
+.contact .icon::before, .icon::after{
+    content: '';
+    width: 5rem;
+    height: 3px;
+    background-color: var(--second-color);
+}
+
+.contact .icon::before{
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+}
+
+.contact .icon::after{
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+}
+
+.contact input{
+    width: 100%;
+    border: 0px;
+    border-radius: 10px;
+    border-bottom: 1px solid var(--second-color);
+    padding: 10px;
+}
+
+.contact input:focus{
+    outline: none;
+}
+
+.contact button {
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    color: var(--text-color);
+    width: fit-content;
+    transition: all ease-in-out .3s;
+}
+
+.contact button:active{
+    border: 1px solid var(--text-color);
+}
