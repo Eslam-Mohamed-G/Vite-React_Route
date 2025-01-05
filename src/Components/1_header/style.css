@@ -5,7 +5,7 @@
 }
 
 .navbar{
-    background-color: var(--second-color) !important;
+    background-color: var(--second-color);
 }
 
 .navbar-brand, .navbar-brand:hover, .navbar-brand:focus{
@@ -13,11 +13,14 @@
     font-weight: 700;
 }
 
-#navbarNav{
-    max-width: fit-content !important;
-}
-
 .navbar-collapse .navbar-nav .nav-item .nav-link{
     color: var(--text-color) !important;
     font-weight: 700;
+}
+
+
+@media screen and (min-width: 990px) {
+    #navbarNav{
+        max-width: fit-content !important;
+    }
 }

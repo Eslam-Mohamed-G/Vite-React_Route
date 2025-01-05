@@ -7,9 +7,9 @@ import "./style.css"
 function NavBar() {
     return (
         <>
-            <nav className="navbar navbar-expand-lg bg-body-tertiary">
-                <div className="container">
-                    <div className="container-fluid d-flex flex-row justify-content-between align-content-between">
+            <nav className="navbar navbar-expand-lg">
+                
+                    <div className="container container-fluid">
                         <NavLink className="navbar-brand text-uppercase" to="/">
                             Start Framework
                         </NavLink>
@@ -53,7 +53,7 @@ function NavBar() {
                             </ul>
                         </div>
                     </div>
-                </div>
+                
             </nav>
         </>
     );
