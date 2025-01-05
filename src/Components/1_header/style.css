@@ -29,3 +29,10 @@
         max-width: fit-content !important;
     }
 }
+@media screen and (max-width: 425px) {
+    .navbar-brand, .navbar-brand:hover, .navbar-brand:focus{
+        color: var(--text-color);
+        font-size: 25px;
+        font-weight: 700;
+    }
+}
