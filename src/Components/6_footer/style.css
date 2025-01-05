@@ -1,0 +1,21 @@
+:root {
+    --main-color: rgb(26, 188, 156);
+    --second-color: rgb(44, 62, 80);
+    --text-color: rgb(255, 255, 255);
+}
+.footer{
+    background-color: var(--second-color);
+    color: var(--text-color);
+}
+
+.footer span{
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--text-color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.copyright{
+    background-color: rgb(26, 37, 47);
+}
