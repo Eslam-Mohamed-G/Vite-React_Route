@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.js";
+import "./style.css"
 
 function NavBar() {
     return (
@@ -12,6 +13,7 @@ function NavBar() {
                         <NavLink className="navbar-brand text-uppercase" to="/">
                             Start Framework
                         </NavLink>
+
                         <button
                             className="navbar-toggler"
                             type="button"
@@ -23,8 +25,9 @@ function NavBar() {
                         >
                             <span className="navbar-toggler-icon" />
                         </button>
+
                         <div
-                            className="collapse navbar-collapse d-flex border"
+                            className="collapse navbar-collapse"
                             id="navbarNav"
                         >
                             <ul className="navbar-nav">

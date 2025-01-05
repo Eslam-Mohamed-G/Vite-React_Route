@@ -1,0 +1,23 @@
+:root {
+    --main-color: rgb(26, 188, 156);
+    --second-color: rgb(44, 62, 80);
+    --text-color: rgb(255, 255, 255);
+}
+
+.navbar{
+    background-color: var(--second-color) !important;
+}
+
+.navbar-brand, .navbar-brand:hover, .navbar-brand:focus{
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+#navbarNav{
+    max-width: fit-content !important;
+}
+
+.navbar-collapse .navbar-nav .nav-item .nav-link{
+    color: var(--text-color) !important;
+    font-weight: 700;
+}
