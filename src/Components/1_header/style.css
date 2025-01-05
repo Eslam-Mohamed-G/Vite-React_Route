@@ -4,12 +4,17 @@
     --text-color: rgb(255, 255, 255);
 }
 
+.active{
+    background-color: var(--main-color);
+    border-radius: 10px;
+}
 .navbar{
     background-color: var(--second-color);
 }
 
 .navbar-brand, .navbar-brand:hover, .navbar-brand:focus{
     color: var(--text-color);
+    font-size: 32px;
     font-weight: 700;
 }
 

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.js";
 import "./style.css"
@@ -7,12 +7,12 @@ import "./style.css"
 function NavBar() {
     return (
         <>
-            <nav className="navbar navbar-expand-lg">
+            <nav className="navbar navbar-expand-lg py-4">
                 
                     <div className="container container-fluid">
-                        <NavLink className="navbar-brand text-uppercase" to="/">
+                        <Link className="navbar-brand text-uppercase" to="/">
                             Start Framework
-                        </NavLink>
+                        </Link>
 
                         <button
                             className="navbar-toggler"
@@ -30,10 +30,10 @@ function NavBar() {
                             className="collapse navbar-collapse"
                             id="navbarNav"
                         >
-                            <ul className="navbar-nav">
+                            <ul className="navbar-nav gap-3">
                                 <li className="nav-item">
                                     <NavLink
-                                        className="nav-link text-uppercase active"
+                                        className="nav-link text-uppercase"
                                         aria-current="page"
                                         to="about"
                                     >
