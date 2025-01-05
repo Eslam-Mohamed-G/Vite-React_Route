@@ -12,7 +12,7 @@
     color: var(--second-color) !important;
 }
 
-.contact .icon::before, .contact.icon::after{
+.contact .icon::before, .contact .icon::after{
     content: '';
     width: 5rem;
     height: 3px;
