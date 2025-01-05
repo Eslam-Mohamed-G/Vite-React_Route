@@ -7,7 +7,7 @@ function Footer() {
         <div className='footer'>
             <div className="container">
                 <div className="row py-5">
-                    <div className="col-md-4">
+                    <div className="col-md-4 mb-5 mb-md-0">
                         <div className="content text-center">
                             <h3>LOCATION</h3>
                             <p>2215 John Daniel Drive</p>
@@ -15,7 +15,7 @@ function Footer() {
                         </div>
                     </div>
 
-                    <div className="col-md-4">
+                    <div className="col-md-4 mb-5 mb-md-0">
                         <div className="content text-center">     
                             <h3>AROUND THE WEB</h3>
                             <div className='d-flex flex-row align-content-center justify-content-center gap-2'>
@@ -27,7 +27,7 @@ function Footer() {
                         </div>
                     </div>
 
-                    <div className="col-md-4">
+                    <div className="col-md-4 mb-5 mb-md-0">
                         <div className="content text-center">
                             <h3>ABOUT FREELANCER</h3>
                             <p>Freelance is a free to use, licensed Bootstrap theme created by Route</p>
