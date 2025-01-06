@@ -2,6 +2,7 @@
     --main-color: rgb(26, 188, 156);
     --second-color: rgb(44, 62, 80);
     --text-color: rgb(255, 255, 255);
+    --bg-model: rgb(194, 218, 255);
 }
 .portfolio h1{
     font-weight: 700;
@@ -44,4 +45,12 @@
 .portfolio .content:hover .bg-black{
     cursor: pointer;
     opacity: 85%;
+}
+
+.modal-content {
+    background-color: var(--bg-model) !important;
+    border: none;
+}
+.modal-body {
+    padding: 0;
 }

@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from "react";
+import { Modal } from "react-bootstrap";
 import "./style.css";
 import poert1 from '../../assets/poert1.png';
 import port2 from '../../assets/port2.png';
@@ -13,6 +14,11 @@ function Portfolio() {
         { id: 5, imageSrc: port2, altText: "img5"},
         { id: 6, imageSrc: port3, altText: "img6"},
     ];
+
+    const [showModel, setShowModel] = useState(null);
+    const handelShow = (img) => {setShowModel(img)};
+    const handelClose = () => {setShowModel(null)};
+
     return (
         <div className='portfolio'>
             <div className="container py-md-5">
@@ -24,7 +30,7 @@ function Portfolio() {
                 <div className='row g-5 my-0'>
                     {PortfolioImage.map((item)=>(
                         <div className='col-lg-4 col-md-6' key={item.id}>
-                            <div className='content rounded overflow-hidden position-relative'>
+                            <div className='content rounded overflow-hidden position-relative' onClick={()=>handelShow(item)}>
                                 <img className='w-100' src={item.imageSrc} alt={item.altText} />
                                 <div className='bg-black position-absolute top-0 bottom-0 start-0 end-0 align-content-center text-center'>
                                     <span><i className="bi bi-plus text-white" /></span>
@@ -32,6 +38,13 @@ function Portfolio() {
                             </div>
                         </div>
                     ))}
+
+                    <Modal show={showModel !==null} onHide={handelClose} centered>
+                        {showModel && (
+                        <Modal.Body className="p-0">
+                            <img className='w-100' src={showModel.imageSrc} alt={showModel.altText}/>
+                        </Modal.Body>)}
+                    </Modal>
                 </div>
 
                 {/* <div className="row g-5 my-0">
