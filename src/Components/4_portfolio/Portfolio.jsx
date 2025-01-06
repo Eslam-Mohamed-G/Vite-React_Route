@@ -12,7 +12,7 @@ function Portfolio() {
                     <h1 className='text-uppercase text-center'>portfolio component</h1>
                     <span className='icon position-relative m-auto' style={{ width: '4rem' }}><i className="bi bi-star-fill" /></span>
                 </div>
-                <div className="row g-5 mt-0">
+                <div className="row g-5 my-0">
                     <div className='col-lg-4 col-md-6'>
                         <div className='content rounded overflow-hidden'>
                             <img className='w-100' src={poert1} alt="" />

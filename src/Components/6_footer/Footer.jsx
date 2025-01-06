@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function Footer() {
     return (
-        <div className='footer'>
+        <div className='footer position-relative mt-5'>
             <div className="container">
                 <div className="row py-5">
                     <div className="col-md-4 mb-5 mb-md-0">
@@ -35,7 +35,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <div className='copyright'><p className='text-center py-3'>Copyright © Your Website 2021</p></div>
+            <div className='copyright position-absolute top-100 w-100'><p className='text-center py-3'>Copyright © Your Website 2021</p></div>
         </div>
     )
 }
