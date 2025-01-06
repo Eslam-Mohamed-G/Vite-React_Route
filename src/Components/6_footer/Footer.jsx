@@ -16,13 +16,13 @@ function Footer() {
                     </div>
 
                     <div className="col-md-4 mb-5 mb-md-0">
-                        <div className="content text-center">     
+                        <div className="content text-center">
                             <h3>AROUND THE WEB</h3>
                             <div className='d-flex flex-row align-content-center justify-content-center gap-2'>
-                            <span className='align-content-center'><i class="bi bi-facebook" /></span>
-                            <span className='align-content-center'><i class="bi bi-twitter" /></span>
-                            <span className='align-content-center'><i class="bi bi-linkedin" /></span>
-                            <span className='align-content-center'><i class="bi bi-globe" /></span>
+                                <span className='align-content-center'><i className="bi bi-facebook" /></span>
+                                <span className='align-content-center'><i className="bi bi-twitter" /></span>
+                                <span className='align-content-center'><i className="bi bi-linkedin" /></span>
+                                <span className='align-content-center'><i className="bi bi-globe" /></span>
                             </div>
                         </div>
                     </div>
