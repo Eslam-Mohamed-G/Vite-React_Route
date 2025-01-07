@@ -38,6 +38,9 @@ This project is a simple web application built using **React**, **Bootstrap**, *
    ```bash
    npm install
 ## Project Structure
+
+```plaintext
+project-directory/
 src/
 ├── Components/
 │   ├── 1_header/
