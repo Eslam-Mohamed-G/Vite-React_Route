@@ -40,7 +40,7 @@ This project is a simple web application built using **React**, **Bootstrap**, *
 ## Project Structure
 
 ```plaintext
-project-directory/
+
 src/
 ├── Components/
 │   ├── 1_header/
@@ -61,6 +61,9 @@ src/
 ├── App.js
 ├── index.js
 └── style.css
+```
+
+---
 
 ## Dependencies
 
