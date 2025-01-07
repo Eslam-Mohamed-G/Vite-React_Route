@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function Footer() {
     return (
-        <div className='footer position-relative mt-5'>
+        <div className='footer position-relative'>
             <div className="container">
                 <div className="row py-5">
                     <div className="col-md-4 mb-5 mb-md-0">
