@@ -4,7 +4,6 @@ import "./style.css";
 import poert1 from '../../assets/poert1.png';
 import port2 from '../../assets/port2.png';
 import port3 from '../../assets/port3.png';
-
 function Portfolio() {
     const PortfolioImage = [
         { id: 1, imageSrc: poert1, altText: "img1"},
@@ -14,11 +13,9 @@ function Portfolio() {
         { id: 5, imageSrc: port2, altText: "img5"},
         { id: 6, imageSrc: port3, altText: "img6"},
     ];
-
     const [showModel, setShowModel] = useState(null);
     const handelShow = (img) => {setShowModel(img)};
     const handelClose = () => {setShowModel(null)};
-
     return (
         <div className='portfolio'>
             <div className="container py-md-5">
@@ -26,7 +23,6 @@ function Portfolio() {
                     <h1 className='text-uppercase text-center'>portfolio component</h1>
                     <span className='icon position-relative m-auto' style={{ width: '4rem' }}><i className="bi bi-star-fill" /></span>
                 </div>
-
                 <div className='row g-5 my-0'>
                     {PortfolioImage.map((item)=>(
                         <div className='col-lg-4 col-md-6' key={item.id}>
@@ -38,7 +34,6 @@ function Portfolio() {
                             </div>
                         </div>
                     ))}
-
                     <Modal show={showModel !==null} onHide={handelClose} centered>
                         {showModel && (
                         <Modal.Body className="p-0">

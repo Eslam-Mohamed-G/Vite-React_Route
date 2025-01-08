@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.js";
 import "./style.css"
 
-function NavBar() {
+function Navbar() {
     return (
         <>
             <nav className="navbar navbar-expand-lg py-4">
@@ -59,4 +59,4 @@ function NavBar() {
     );
 }
 
-export default NavBar;
+export default Navbar;
